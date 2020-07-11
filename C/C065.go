@@ -70,11 +70,11 @@ func main(){
 			}
 		}
 
+		//"/"が2個の時2個ともで割り切れないといけないので isAddedの数とlen(divList)の数
 		if isAdd == len(divList) {
 			result = guessList[i]
 		}
 	}
 
 	fmt.Println(result)
-
 }
