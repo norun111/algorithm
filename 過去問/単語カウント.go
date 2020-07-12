@@ -1,12 +1,12 @@
 package main
+
 import (
+	"bufio"
 	"fmt"
 	"os"
-	"bufio"
 	"strings"
 	// "strconv"
 )
-
 
 func main() {
 	sc := bufio.NewScanner(os.Stdin)
@@ -26,13 +26,12 @@ func main() {
 		for _, s := range slice {
 
 			if key == s {
-				m[key]+=1
+				m[key] += 1
 			}
 		}
 	}
 
 	// fmt.Println(m)
-
 
 	//mapにすると順序が不定なので出力が順番通りになるように新しいスライスを作成
 	compareList := make([]string, 0)
@@ -44,7 +43,7 @@ func main() {
 			if s == key {
 
 				// fmt.Println(s,i)
-				if !isContain(compareList, s){
+				if !isContain(compareList, s) {
 					compareList = append(compareList, s)
 				}
 			}
@@ -65,14 +64,12 @@ func main() {
 	}
 	// fmt.Println(resultList)
 
-
 	for i, c := range compareList {
 
 		fmt.Println(c, resultList[i])
 	}
 
 }
-
 
 func isContain(slice []string, str string) bool {
 
