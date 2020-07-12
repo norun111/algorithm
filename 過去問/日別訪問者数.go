@@ -1,23 +1,24 @@
 package main
 
 import (
-	"fmt"
 	"bufio"
+	"fmt"
 	"os"
+	"sort"
 	"strconv"
 	"strings"
-	"sort"
 )
-func main(){
+
+func main() {
 	// 自分の得意な言語で
 	// Let's チャレンジ！！
 	sc := bufio.NewScanner(os.Stdin)
 	sc.Scan()
 	slice := strings.Split(sc.Text(), " ")
-	num,_ := strconv.Atoi(slice[0])
-	div,_ := strconv.Atoi(slice[1])
+	num, _ := strconv.Atoi(slice[0])
+	div, _ := strconv.Atoi(slice[1])
 
-	loopNum := (num-div)+1
+	loopNum := (num - div) + 1
 
 	sc.Scan()
 	numSlice := strings.Split(sc.Text(), " ")
@@ -25,10 +26,10 @@ func main(){
 
 	var result [][]string
 
-	for i:=0; i<loopNum; i++ {
+	for i := 0; i < loopNum; i++ {
 		//fmt.Println(numSlice[i],numSlice[i+1], numSlice[i+2])
 
-		extra := numSlice[i:div+i]
+		extra := numSlice[i : div+i]
 
 		result = append(result, extra)
 	}
@@ -40,8 +41,8 @@ func main(){
 
 		sum := 0
 		for _, a := range r {
-			i,_ := strconv.Atoi(a)
-			sum+=i
+			i, _ := strconv.Atoi(a)
+			sum += i
 		}
 		newResult = append(newResult, sum)
 	}
@@ -78,7 +79,6 @@ func main(){
 
 	fmt.Println(resultSum, in+1) //候補日数
 }
-
 
 func index(slice []string, str string) int {
 
