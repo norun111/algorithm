@@ -1,11 +1,13 @@
 package main
+
 import (
-	"fmt"
 	"bufio"
+	"fmt"
 	"os"
 	"strconv"
 )
-func main(){
+
+func main() {
 	sc := bufio.NewScanner(os.Stdin)
 	sc.Scan()
 	loopNum, _ := strconv.Atoi(sc.Text())
@@ -13,7 +15,7 @@ func main(){
 	var strikeNum int = 0
 	var ballNum int = 0
 
-	for i:=0; i<loopNum; i++ {
+	for i := 0; i < loopNum; i++ {
 		sc.Scan()
 		judge := sc.Text()
 
