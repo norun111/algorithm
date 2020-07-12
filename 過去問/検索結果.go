@@ -1,15 +1,15 @@
 package main
 
 import (
-	"fmt"
 	"bufio"
+	"fmt"
 	"os"
 	"strconv"
 )
 
-func arrayContains(arr []string, str string) bool{
-	for _, v := range arr{
-		if v == str{
+func arrayContains(arr []string, str string) bool {
+	for _, v := range arr {
+		if v == str {
 			return true
 		}
 	}
@@ -33,10 +33,10 @@ func strPlace(slice []string, str string) int {
 		}
 	}
 
-	return index+1
+	return index + 1
 }
 
-func main(){
+func main() {
 	// Your code here!
 	sc := bufio.NewScanner(os.Stdin)
 	sc.Scan()
@@ -44,14 +44,14 @@ func main(){
 
 	slice := make([]string, 0)
 
-	for i:=0; i<loopNum; i++ {
+	for i := 0; i < loopNum; i++ {
 		sc.Scan()
 
 		str := sc.Text()
 		index := strPlace(slice, str)
 
 		//入っている場合
-		if(arrayContains(slice, str)){
+		if arrayContains(slice, str) {
 			slice = append([]string{str}, slice...)
 			// fmt.Println(slice)
 			// fmt.Println(index, str)
@@ -68,4 +68,3 @@ func main(){
 		fmt.Println(s)
 	}
 }
-
