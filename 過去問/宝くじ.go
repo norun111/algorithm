@@ -1,11 +1,13 @@
 package main
+
 import (
-	"fmt"
 	"bufio"
+	"fmt"
 	"os"
 	"strconv"
 )
-func main(){
+
+func main() {
 	sc := bufio.NewScanner(os.Stdin)
 	sc.Scan()
 	correct, _ := strconv.Atoi(sc.Text())
@@ -14,7 +16,7 @@ func main(){
 	sc.Scan()
 	loopNum, _ := strconv.Atoi(sc.Text())
 
-	for i:=0; i<loopNum; i++ {
+	for i := 0; i < loopNum; i++ {
 		sc.Scan()
 		challenge, _ := strconv.Atoi(sc.Text())
 		challengeStr := sc.Text()
