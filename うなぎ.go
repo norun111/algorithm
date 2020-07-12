@@ -1,18 +1,18 @@
 package GoPaiza
 
 import (
+	"bufio"
 	"fmt"
 	"os"
-	"bufio"
-	"strings"
 	"strconv"
+	"strings"
 )
 
 func isFull(startNum int, peopleNum int, slice []int) bool {
 	judge := true
 
-	for i:= startNum-1; i < startNum+peopleNum-2; i++ {
-		if slice[i] == 1 || i > len(slice){
+	for i := startNum - 1; i < startNum+peopleNum-2; i++ {
+		if slice[i] == 1 || i > len(slice) {
 			judge = false
 		}
 	}
@@ -31,9 +31,7 @@ func oneCount(slice []int) int {
 	return sum
 }
 
-
-
-func main(){
+func main() {
 	sc := bufio.NewScanner(os.Stdin)
 	sc.Scan()
 	s := strings.Split(sc.Text(), " ")
@@ -42,7 +40,7 @@ func main(){
 
 	slice := make([]int, chairNum)
 
-	for i:=0; i<groupNum; i++ {
+	for i := 0; i < groupNum; i++ {
 		sc.Scan()
 		sl := strings.Split(sc.Text(), " ")
 		num, _ := strconv.Atoi(sl[0])
@@ -50,7 +48,7 @@ func main(){
 
 		if sitStart+num-2 <= len(slice) {
 			if isFull(sitStart, num, slice) {
-				for i:= sitStart-1; i <= sitStart+num-2; i++ {
+				for i := sitStart - 1; i <= sitStart+num-2; i++ {
 					slice[i] = 1
 				}
 			}
