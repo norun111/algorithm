@@ -1,15 +1,15 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"os"
-	"bufio"
-	"strings"
-	"strconv"
 	"sort"
+	"strconv"
+	"strings"
 )
 
-func main(){
+func main() {
 	// 自分の得意な言語で
 	// Let's チャレンジ！！
 	sc := bufio.NewScanner(os.Stdin)
@@ -22,7 +22,7 @@ func main(){
 	divList := make([]int, 0)
 
 	//最大と最小がいくらか
-	for i:=0; i<loopNum; i++ {
+	for i := 0; i < loopNum; i++ {
 		sc.Scan()
 		s := strings.Split(sc.Text(), " ")
 
@@ -42,13 +42,13 @@ func main(){
 	sort.Ints(minList)
 
 	max := maxList[len(maxList)-1] //最大値
-	min := minList[0] //最小値
+	min := minList[0]              //最小値
 
 	// 	fmt.Println(divList)
 
 	guessList := make([]int, 0)
 
-	for i:=min+1; i<max; i++ {
+	for i := min + 1; i < max; i++ {
 		guessList = append(guessList, i)
 	}
 
@@ -56,13 +56,13 @@ func main(){
 
 	result := 0
 
-	for i:=0; i<len(guessList); i++ {
+	for i := 0; i < len(guessList); i++ {
 
 		isAdd := 0
 
-		for j:=0; j<len(divList); j++ {
+		for j := 0; j < len(divList); j++ {
 
-			if guessList[i]%divList[j]!=0{
+			if guessList[i]%divList[j] != 0 {
 				// fmt.Println(divList[j], j)
 			} else {
 				// fmt.Println(guessList[i])
