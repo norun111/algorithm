@@ -1,19 +1,21 @@
 package main
+
 import (
+	"bufio"
 	"fmt"
 	"os"
-	"bufio"
-	"strings"
 	"strconv"
+	"strings"
 )
-func main(){
+
+func main() {
 	// 自分の得意な言語で
 	// Let's チャレンジ！！
 	sc := bufio.NewScanner(os.Stdin)
 	sc.Scan()
 	s := strings.Split(sc.Text(), " ")
 
-	buttonNum,_ := strconv.Atoi(s[0])
+	buttonNum, _ := strconv.Atoi(s[0])
 	missNum, _ := strconv.Atoi(s[1])
 
 	sc.Scan()
@@ -26,9 +28,9 @@ func main(){
 	x := 0
 	y := 0
 
-	for i:=0; i<loopNum; i++ {
+	for i := 0; i < loopNum; i++ {
 		number, _ := strconv.Atoi(numList[i])
-		if i==0{
+		if i == 0 {
 
 			//ミス(1番目だから)
 			if number > 1 {
@@ -51,7 +53,6 @@ func main(){
 			}
 
 		} else {
-
 
 			//1番目以外の処理
 
@@ -85,6 +86,6 @@ func main(){
 	if y == missNum {
 		fmt.Println(-1)
 	} else {
-		fmt.Println(1000*x)
+		fmt.Println(1000 * x)
 	}
 }
