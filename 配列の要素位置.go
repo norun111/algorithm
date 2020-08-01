@@ -2,7 +2,7 @@ package GoPaiza
 
 func index(slice []string, str string) int {
 
-	index := 0
+	index := -1
 	for i, s := range slice {
 
 		if s == str {
@@ -11,7 +11,7 @@ func index(slice []string, str string) int {
 		}
 	}
 
-	return index // indexが0は配列に文字列が存在しない場合
+	return index // indexが-1は配列に文字列が存在しない場合
 }
 
 //単語が配列にあるかどうかの判断関数
