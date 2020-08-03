@@ -1,4 +1,4 @@
-package GoPaiza
+package main
 
 import (
 	"bufio"
