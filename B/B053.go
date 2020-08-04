@@ -5,11 +5,8 @@ import (
 	"os"
 	"strconv"
 	"strings"
-	// 	"sort"
 )
 func main(){
-	// 自分の得意な言語で
-	// Let's チャレンジ！！
 	sc := bufio.NewScanner(os.Stdin)
 	sc.Scan()
 	list := strings.Split(sc.Text(), " ")
