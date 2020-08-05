@@ -5,15 +5,11 @@ import (
 	"os"
 	"strconv"
 	"strings"
-	// 	"math"
-	// 	"sort"
 )
 
 func isContain(slice []string, str string) []string {
 
 	condition := []string{}
-
-
 
 	for _, s := range slice {
 
@@ -68,9 +64,7 @@ func main(){
 		for j:=0; j<len(dummyList); j++ {
 
 			if i != j {
-
 				// fmt.Println(trainList[j])
-
 				anotherTrain := strings.Split(trainList[j], " ")
 				// anotherTrainStart := anotherTrain[0]
 				// anotherTrainEnd := anotherTrain[1]
@@ -81,7 +75,6 @@ func main(){
 				fmt.Println(resultList, anotherDummyTrain)
 
 				if end == anotherDummyTrainStart {
-
 					result := isContain(dummyList, anotherDummyTrainEnd)
 
 					if len(result) > 0 {
@@ -91,11 +84,8 @@ func main(){
 
 						resultList = append(resultList, anotherTrain , result)
 					}
-
 				}
-
 			}
-
 		}
 		fmt.Println(resultList)
 	}
