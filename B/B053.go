@@ -1,4 +1,5 @@
 package main
+
 import (
 	"bufio"
 	"fmt"
@@ -6,7 +7,8 @@ import (
 	"strconv"
 	"strings"
 )
-func main(){
+
+func main() {
 	sc := bufio.NewScanner(os.Stdin)
 	sc.Scan()
 	list := strings.Split(sc.Text(), " ")
@@ -32,8 +34,7 @@ func main(){
 	firstList := []int{a, b}
 	secondList := []int{c, d}
 
-
-	for i:=0; i<horizon-2; i++ {
+	for i := 0; i < horizon-2; i++ {
 		add1 := firstList[len(firstList)-1] + b_a
 		add2 := secondList[len(secondList)-1] + d_c
 
@@ -43,7 +44,7 @@ func main(){
 
 	saList := []int{}
 
-	for i:=0; i<len(firstList); i++ {
+	for i := 0; i < len(firstList); i++ {
 		sa := secondList[i] - firstList[i]
 		saList = append(saList, sa)
 	}
@@ -54,12 +55,12 @@ func main(){
 
 	resultList = append(resultList, secondList)
 
-	for i:=0; i<vertical-2; i++ {
+	for i := 0; i < vertical-2; i++ {
 		l := []int{}
 
 		compareList := resultList[len(resultList)-1]
 
-		for j:=0; j<len(saList); j++ {
+		for j := 0; j < len(saList); j++ {
 			r := compareList[j] + saList[j]
 			l = append(l, r)
 		}
@@ -74,7 +75,7 @@ func main(){
 	for _, re := range resultList {
 		strl := []string{}
 
-		for j:=0; j<len(saList); j++ {
+		for j := 0; j < len(saList); j++ {
 
 			s := strconv.Itoa(re[j])
 			strl = append(strl, s)
