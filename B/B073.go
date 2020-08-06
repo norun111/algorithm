@@ -1,4 +1,5 @@
 package main
+
 import (
 	"bufio"
 	"fmt"
@@ -6,7 +7,8 @@ import (
 	"strconv"
 	"strings"
 )
-func main(){
+
+func main() {
 	sc := bufio.NewScanner(os.Stdin)
 	sc.Scan()
 	list := strings.Split(sc.Text(), " ")
@@ -25,7 +27,7 @@ func main(){
 	sc.Scan()
 	surveyNum, _ := strconv.Atoi(sc.Text())
 
-	for i:=0; i<surveyNum; i++ {
+	for i := 0; i < surveyNum; i++ {
 
 		sc.Scan()
 		distanceList := strings.Split(sc.Text(), " ")
@@ -35,18 +37,18 @@ func main(){
 		sum := 0
 		count := 0
 
-		for j:=a-1; j<b; j++ {
-			sum+=lightNumList[j]
+		for j := a - 1; j < b; j++ {
+			sum += lightNumList[j]
 			count++
 		}
-		result := sum/count
+		result := sum / count
 
 		//平均以下であれば
 		if result <= averageNum {
 			sub := averageNum - result
 
-			for j:=a-1; j<b; j++ {
-				lightNumList[j]+=sub
+			for j := a - 1; j < b; j++ {
+				lightNumList[j] += sub
 			}
 		}
 	}
