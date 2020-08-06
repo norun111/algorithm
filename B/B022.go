@@ -1,5 +1,6 @@
 //すべてのテストケースは通っていない
 package main
+
 import (
 	"bufio"
 	"fmt"
@@ -7,7 +8,8 @@ import (
 	"strconv"
 	"strings"
 )
-func main(){
+
+func main() {
 	// 自分の得意な言語で
 	// Let's チャレンジ！！
 	sc := bufio.NewScanner(os.Stdin)
@@ -21,13 +23,13 @@ func main(){
 
 	voteList[0] = votersNum
 
-	for i:=0; i<addressNum; i++ {
+	for i := 0; i < addressNum; i++ {
 		sc.Scan()
 		addresser, _ := strconv.Atoi(sc.Text())
 		// fmt.Println(addresser)
 		count := 0
 
-		for j:=0; j<len(voteList); j++ {
+		for j := 0; j < len(voteList); j++ {
 
 			if j != addresser && voteList[j] > 0 {
 				voteList[j]--
@@ -42,8 +44,7 @@ func main(){
 	resultList := []int{voteList[0]}
 	indexList := []int{1}
 
-	for i:=1; i<len(voteList); i++ {
-
+	for i := 1; i < len(voteList); i++ {
 
 		if resultList[len(resultList)-1] <= voteList[i] {
 			if resultList[len(resultList)-1] != voteList[i] {
