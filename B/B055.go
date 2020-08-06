@@ -1,14 +1,16 @@
 package main
+
 import (
 	"bufio"
 	"fmt"
+	"math"
 	"os"
+	"sort"
 	"strconv"
 	"strings"
-	"math"
-	"sort"
 )
-func main(){
+
+func main() {
 	sc := bufio.NewScanner(os.Stdin)
 	sc.Scan()
 	list := strings.Split(sc.Text(), " ")
@@ -18,7 +20,7 @@ func main(){
 
 	feeList := []int{}
 
-	for i:=0; i<taxiNum; i++ {
+	for i := 0; i < taxiNum; i++ {
 		sc.Scan()
 		li := strings.Split(sc.Text(), " ")
 		firstDistance, _ := strconv.Atoi(li[0])
@@ -29,25 +31,24 @@ func main(){
 		sum := 0
 
 		if distance >= firstDistance {
-			sum+=firstFee
+			sum += firstFee
 			remainingDistance := distance - firstDistance
 
 			if remainingDistance <= addDistance {
-				sum+=addFee
-			} else if remainingDistance % addDistance == 0 {
+				sum += addFee
+			} else if remainingDistance%addDistance == 0 {
 				div := (float64(remainingDistance) / float64(addDistance))
 				in := int(math.Ceil(div))
-				sum+=(in*addFee)
-				sum+=addFee
+				sum += (in * addFee)
+				sum += addFee
 			} else {
 				div := (float64(remainingDistance) / float64(addDistance))
 				in := int(math.Ceil(div))
-				sum+=(in*addFee)
+				sum += (in * addFee)
 			}
 
-
 		} else if distance < firstDistance {
-			sum+=firstFee
+			sum += firstFee
 		}
 		feeList = append(feeList, sum)
 	}
