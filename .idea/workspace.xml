@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b833cdf-45e9-44d2-917e-b99efdff75a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/B/B025.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/B/B33.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/isInitialsUpper.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B/B076.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/B/A.go" beforeDir="false" afterPath="$PROJECT_DIR$/B/A.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/B/B010.go" beforeDir="false" afterPath="$PROJECT_DIR$/B/B010.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/B/B013.go" beforeDir="false" afterPath="$PROJECT_DIR$/B/B013.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/B/B022.go" beforeDir="false" afterPath="$PROJECT_DIR$/B/B022.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/B/B043.go" beforeDir="false" afterPath="$PROJECT_DIR$/B/B043.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/B/B051.go" beforeDir="false" afterPath="$PROJECT_DIR$/B/B051.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/B/B053.go" beforeDir="false" afterPath="$PROJECT_DIR$/B/B053.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/B/B055.go" beforeDir="false" afterPath="$PROJECT_DIR$/B/B055.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/B/B073.go" beforeDir="false" afterPath="$PROJECT_DIR$/B/B073.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/B/B078.go" beforeDir="false" afterPath="$PROJECT_DIR$/B/B078.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/B/B081.go" beforeDir="false" afterPath="$PROJECT_DIR$/B/B081.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/B/しりとり.go" beforeDir="false" afterPath="$PROJECT_DIR$/B/しりとり.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
