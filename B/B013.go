@@ -1,4 +1,5 @@
 package main
+
 import (
 	"bufio"
 	"fmt"
@@ -7,11 +8,11 @@ import (
 	"strings"
 )
 
-func main(){
+func main() {
 	sc := bufio.NewScanner(os.Stdin)
 	sc.Scan()
 	list := strings.Split(sc.Text(), " ")
-	a,_ := strconv.Atoi(list[0])
+	a, _ := strconv.Atoi(list[0])
 	b, _ := strconv.Atoi(list[1])
 	c, _ := strconv.Atoi(list[2])
 
@@ -22,31 +23,31 @@ func main(){
 
 	li := []string{}
 
-	for i:=0; i<trainNum; i++ {
+	for i := 0; i < trainNum; i++ {
 		sc.Scan()
 		li = append(li, sc.Text())
 		timeList := strings.Split(sc.Text(), " ")
 		hour, _ := strconv.Atoi(timeList[0])
 		minute, _ := strconv.Atoi(timeList[1])
 
-		minute-=a
+		minute -= a
 		if minute < 0 {
 			hour--
 			minute = 60 + minute
 		}
-		minute+=a
+		minute += a
 		if minute >= 60 {
-			minute-=60
+			minute -= 60
 			hour++
 		}
-		minute+=b
+		minute += b
 		if minute >= 60 {
-			minute-=60
+			minute -= 60
 			hour++
 		}
-		minute+=c
+		minute += c
 		if minute >= 60 {
-			minute-=60
+			minute -= 60
 			hour++
 		}
 
@@ -63,7 +64,7 @@ func main(){
 	cHour, _ := strconv.Atoi(newcorrectTime[0])
 	cMinute, _ := strconv.Atoi(newcorrectTime[1])
 
-	cMinute-=a
+	cMinute -= a
 	if cMinute < 0 {
 		cHour--
 		cMinute = 60 + cMinute
@@ -73,9 +74,9 @@ func main(){
 	strMinute := strconv.Itoa(cMinute)
 
 	if len(strMinute) == 2 {
-		fmt.Println("0"+strHour+":"+strMinute)
+		fmt.Println("0" + strHour + ":" + strMinute)
 	} else {
-		fmt.Println("0"+strHour+":"+"0"+strMinute)
+		fmt.Println("0" + strHour + ":" + "0" + strMinute)
 	}
 
 }
