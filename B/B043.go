@@ -1,5 +1,6 @@
 //37点
 package main
+
 import (
 	"bufio"
 	"fmt"
@@ -7,11 +8,12 @@ import (
 	"strconv"
 	"strings"
 )
-func main(){
+
+func main() {
 	sc := bufio.NewScanner(os.Stdin)
 	sc.Scan()
 	list := strings.Split(sc.Text(), " ")
-	tate, _  := strconv.Atoi(list[0])
+	tate, _ := strconv.Atoi(list[0])
 	yoko, _ := strconv.Atoi(list[1])
 
 	sc.Scan()
@@ -21,11 +23,9 @@ func main(){
 
 	coordinate := []int{x, y}
 
-
-
 	townList := [][]string{}
 
-	for i:=0; i < tate; i++ {
+	for i := 0; i < tate; i++ {
 		sc.Scan()
 		list3 := strings.Split(sc.Text(), "")
 
@@ -50,15 +50,15 @@ func main(){
 			if townList[coordinate[0]-1][coordinate[1]-1] == "*" {
 
 				townList[coordinate[0]-1][coordinate[1]-1] = "."
-				if coordinate[1] + 1 > yoko {
+				if coordinate[1]+1 > yoko {
 					break
 				}
-				coordinate[1]+=1
+				coordinate[1] += 1
 
 			} else if townList[coordinate[0]-1][coordinate[1]-1] == "." {
 				// 庶民の家だった場合
 				townList[coordinate[0]-1][coordinate[1]-1] = "*"
-				if coordinate[1] + 1 > yoko {
+				if coordinate[1]+1 > yoko {
 					break
 				}
 				coordinate[1]++
@@ -73,7 +73,7 @@ func main(){
 				} else {
 					//庶民であった場合
 					townList[coordinate[0]-1][coordinate[1]-1] = "*"
-					if coordinate[0] + 1 > tate {
+					if coordinate[0]+1 > tate {
 						break
 					}
 					coordinate[0]++
@@ -83,7 +83,7 @@ func main(){
 				if townList[coordinate[0]-1][coordinate[1]-1] == "*" {
 					//富豪であった場合
 					townList[coordinate[0]-1][coordinate[1]-1] = "."
-					if coordinate[1] + 1 > yoko {
+					if coordinate[1]+1 > yoko {
 						break
 					}
 					coordinate[1]++
@@ -98,7 +98,7 @@ func main(){
 				if townList[coordinate[0]-1][coordinate[1]-1] == "*" {
 					//富豪であった場合
 					townList[coordinate[0]-1][coordinate[1]-1] = "."
-					if coordinate[0] + 1 > tate {
+					if coordinate[0]+1 > tate {
 						break
 					}
 					coordinate[0]++
@@ -118,7 +118,7 @@ func main(){
 				} else {
 					//庶民であった場合
 					townList[coordinate[0]-1][coordinate[1]-1] = "*"
-					if coordinate[1] + 1 > yoko {
+					if coordinate[1]+1 > yoko {
 						break
 					}
 					coordinate[1]++
