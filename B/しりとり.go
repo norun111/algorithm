@@ -1,12 +1,14 @@
 package main
+
 import (
 	"bufio"
+	"fmt"
 	"os"
 	"strconv"
 	"strings"
-	"fmt"
 )
-func main(){
+
+func main() {
 	// 自分の得意な言語で
 	// Let's チャレンジ！！
 	sc := bufio.NewScanner(os.Stdin)
@@ -20,12 +22,12 @@ func main(){
 
 	peopleList := []int{}
 
-	for i:=0; i<wordNum; i++ {
+	for i := 0; i < wordNum; i++ {
 		sc.Scan()
 		wordList = append(wordList, sc.Text())
 	}
 
-	for i:=1; i<=peopleNum; i++ {
+	for i := 1; i <= peopleNum; i++ {
 		peopleList = append(peopleList, i)
 	}
 	// fmt.Println(peopleList)//[1 2 3]
@@ -36,7 +38,7 @@ func main(){
 	alreadySay := []string{}
 	alreadySay2 := []string{}
 
-	for i:=0; i<speakNum; i++ {
+	for i := 0; i < speakNum; i++ {
 		// fmt.Println(peopleList)
 		// fmt.Println(alreadySay)
 		sc.Scan()
@@ -59,7 +61,6 @@ func main(){
 			}
 
 			nowTurn++ //次の人に進める
-
 
 		} else {
 
@@ -92,7 +93,7 @@ func main(){
 					alreadySay = append(alreadySay, word)
 					alreadySay2 = append(alreadySay, word)
 
-					if nowTurn + 1 == len(peopleList) {
+					if nowTurn+1 == len(peopleList) {
 						nowTurn = 0
 					} else {
 						nowTurn++
@@ -125,19 +126,14 @@ func main(){
 					alreadySay = append(alreadySay, word)
 					alreadySay2 = append(alreadySay, word)
 
-					if nowTurn + 1 == len(peopleList) {
+					if nowTurn+1 == len(peopleList) {
 						nowTurn = 0
 					} else {
 						nowTurn++
 					}
 				}
 
-
-
-
 			}
-
-
 
 		}
 
