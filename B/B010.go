@@ -1,13 +1,15 @@
 package main
+
 import (
 	"bufio"
 	"fmt"
 	"os"
+	"sort"
 	"strconv"
 	"strings"
-	"sort"
 )
-func main(){
+
+func main() {
 	sc := bufio.NewScanner(os.Stdin)
 	sc.Scan()
 	list := strings.Split(sc.Text(), " ")
@@ -43,7 +45,7 @@ func main(){
 
 			for i, ta := range teamA {
 				if secondBack < ta {
-					fmt.Println(i+1)
+					fmt.Println(i + 1)
 					isOffSide = true
 				}
 			}
@@ -80,7 +82,7 @@ func main(){
 
 			for i, tb := range teamB {
 				if secondBack > tb {
-					fmt.Println(i+1)
+					fmt.Println(i + 1)
 					isOffSide = true
 				}
 			}
