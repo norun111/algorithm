@@ -1,21 +1,22 @@
 package main
+
 import (
 	"bufio"
 	"fmt"
 	"os"
+	"sort"
 	"strconv"
 	"strings"
-	"sort"
 )
-func main(){
+
+func main() {
 	sc := bufio.NewScanner(os.Stdin)
 	sc.Scan()
 	num, _ := strconv.Atoi(sc.Text())
 
-
 	slice := []map[string]int{}
 
-	for i:=0; i<num; i++ {
+	for i := 0; i < num; i++ {
 		m := make(map[string]int)
 		sc.Scan()
 		list := strings.Split(sc.Text(), " ")
@@ -29,7 +30,6 @@ func main(){
 	}
 
 	var keys []int
-
 
 	for _, k := range slice {
 		keys = append(keys, k["start"])
