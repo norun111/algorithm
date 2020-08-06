@@ -1,4 +1,5 @@
 package main
+
 import (
 	"bufio"
 	"fmt"
@@ -31,7 +32,7 @@ func unset(s []string, i int) []string {
 	return append(s[:i], s[i+1:]...)
 }
 
-func main(){
+func main() {
 	// Your code here!
 	sc := bufio.NewScanner(os.Stdin)
 	sc.Scan()
@@ -43,14 +44,14 @@ func main(){
 
 	dummyList := []string{}
 
-	for i:=0; i<trainNum; i++ {
+	for i := 0; i < trainNum; i++ {
 		sc.Scan()
 		li := sc.Text()
 		trainList = append(trainList, li)
 		dummyList = append(dummyList, li)
 	}
 
-	for i:=0; i<trainNum; i++ {
+	for i := 0; i < trainNum; i++ {
 		fmt.Println(dummyList)
 
 		l := strings.Split(trainList[i], " ")
@@ -61,7 +62,7 @@ func main(){
 
 		resultList := [][]string{}
 
-		for j:=0; j<len(dummyList); j++ {
+		for j := 0; j < len(dummyList); j++ {
 
 			if i != j {
 				// fmt.Println(trainList[j])
@@ -82,7 +83,7 @@ func main(){
 						// 今調査している要素を削除
 						dummyList = unset(dummyList, j)
 
-						resultList = append(resultList, anotherTrain , result)
+						resultList = append(resultList, anotherTrain, result)
 					}
 				}
 			}
