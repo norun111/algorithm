@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b833cdf-45e9-44d2-917e-b99efdff75a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/B/B019.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/配列の分割.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isInitialsUpper.go" beforeDir="false" afterPath="$PROJECT_DIR$/isInitialsUpper.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
