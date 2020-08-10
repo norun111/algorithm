@@ -11,11 +11,12 @@ func isInitialsUpper(hoge string) bool {
 	if hoge == "" {
 		return false
 	}
-	// UTF-8のバイトをrune型にキャストしています
+	// 文字列の一文字目をrune型にキャストしています。
 	initials := rune(hoge[0])
 
-	// unicodeパッケージのIsUpper関数の引数にrune型の変数initialsを入れ、
-	// そのrune文字が大文字かどうかをbool値で返します
+	// unicodeパッケージのIsUpper関数を使用しています。
+	// 引数にrune型の変数initialsをいれ、
+	// そのrune文字が大文字かどうかをbool値で返します。
 	return unicode.IsUpper(initials)
 }
 
