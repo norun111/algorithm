@@ -2,12 +2,13 @@ package main
 
 import (
 	"bufio"
+	"fmt"
 	"os"
 	"strconv"
 	"strings"
-	"fmt"
 )
-func main(){
+
+func main() {
 
 	sc := bufio.NewScanner(os.Stdin)
 	sc.Scan()
@@ -17,7 +18,7 @@ func main(){
 
 	obj := make(map[int]int, loopNum)
 
-	for i:=0; i<loopNum; i++ {
+	for i := 0; i < loopNum; i++ {
 		sc.Scan()
 		sl := strings.Split(sc.Text(), " ")
 
@@ -38,7 +39,7 @@ func main(){
 				dif := key2 - key1
 				speedDif := obj[key2] - obj[key1]
 
-				r := speedDif/dif
+				r := speedDif / dif
 				resultList = append(resultList, r)
 			}
 		}
