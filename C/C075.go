@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-func main(){
+func main() {
 
 	sc := bufio.NewScanner(os.Stdin)
 	sc.Scan()
@@ -18,7 +18,7 @@ func main(){
 
 	point := 0
 
-	for i:=0; i<num; i++ {
+	for i := 0; i < num; i++ {
 		sc.Scan()
 		fee, _ := strconv.Atoi(sc.Text())
 
@@ -27,8 +27,8 @@ func main(){
 			fmt.Println(charge, point)
 		} else if charge >= fee {
 			charge -= fee
-			p := fee/10
-			point+=p
+			p := fee / 10
+			point += p
 			fmt.Println(charge, point)
 		}
 	}
