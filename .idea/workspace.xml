@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b833cdf-45e9-44d2-917e-b99efdff75a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/B/B028.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/B/B060(未回答 サイコロ).go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/B/B061(全計算結果組み合わせ).go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/B/B062.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/C/C041(ユーザー定義型).go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/C/マップの判定.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/最小値・最大値除いた要素の合計.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/C/座標系での移動・方角.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
