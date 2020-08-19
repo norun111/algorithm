@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b833cdf-45e9-44d2-917e-b99efdff75a7" name="Default Changelist" comment="" />
+    <list default="true" id="8b833cdf-45e9-44d2-917e-b99efdff75a7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/B/B028.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B/B060(未回答 サイコロ).go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B/B061(全計算結果組み合わせ).go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B/B062.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/C/C041(ユーザー定義型).go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/C/マップの判定.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/最小値・最大値除いた要素の合計.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,5 +56,9 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="165" y="345" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1592454087311" />
+    <state x="121" y="262" width="598" height="548" key="find.popup" timestamp="1597662901747">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="121" y="262" width="598" height="548" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1597662901747" />
   </component>
 </project>
