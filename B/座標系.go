@@ -1,10 +1,10 @@
 package main
 import (
-"bufio"
-"fmt"
-"os"
-"strconv"
-"strings"
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+	"strings"
 )
 func main(){
 	sc := bufio.NewScanner(os.Stdin)
