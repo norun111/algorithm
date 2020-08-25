@@ -22,6 +22,7 @@ func main(){
 
 	margin := 0
 
+	// ユークリッド互徐法
 	for {
 		if second%first == 0 {
 			break
