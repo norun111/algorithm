@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b833cdf-45e9-44d2-917e-b99efdff75a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/C/べき乗.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2の累乗.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AtCorder/placing Marbles.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/累積和.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/総和.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
