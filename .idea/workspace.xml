@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b833cdf-45e9-44d2-917e-b99efdff75a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AtCorder/Some Sums.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AtCorder/coins.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AtCorder/Card Game for Two.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AtCorder/Kagami Mochi.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/累積和.go" beforeDir="false" afterPath="$PROJECT_DIR$/累積和.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
