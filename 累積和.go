@@ -12,6 +12,7 @@ func main(){
 	sc.Scan()
 	strNums := strings.Split(sc.Text(), " ")
 
+	
 	intNums := make([]int, 0, num)
 	for _, str := range strNums {
 		i, _ := strconv.Atoi(str)
