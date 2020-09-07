@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b833cdf-45e9-44d2-917e-b99efdff75a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/codity/PermMissingElem.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codity/Brackets()[]{}.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codity/DNA.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codity/Distinct.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codity/Fish.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codity/MaxProductOfThree.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codity/MinAvgTwoSlice.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codity/Nesting.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codity/PassingCars.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
