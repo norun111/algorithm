@@ -1,4 +1,4 @@
-package codity
+package Codity
 
 // Timeout Error
 
