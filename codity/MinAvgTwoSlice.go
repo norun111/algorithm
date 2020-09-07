@@ -1,4 +1,4 @@
-package codity
+package Codity
 // Timeout Error 30%
 
 // you can also use imports, for example:
