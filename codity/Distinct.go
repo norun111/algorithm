@@ -1,4 +1,4 @@
-package codity
+package Codity
 
 func removeDuplicate(args []int) int {
 	encountered := map[int]bool{}
