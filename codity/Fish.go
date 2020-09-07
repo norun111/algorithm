@@ -1,4 +1,4 @@
-package codity
+package Codity
 
 func Solution(A []int, B []int) int {
 
