@@ -1,4 +1,4 @@
-package codity
+package Codity
 // you can also use imports, for example:
 import (
 	"strings"
