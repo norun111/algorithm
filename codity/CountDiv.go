@@ -1,4 +1,4 @@
-package codity
+package Codity
 
 func Solution(A int, B int, K int) int {
 	// write your code in Go 1.4
