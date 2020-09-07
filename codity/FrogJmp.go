@@ -6,7 +6,7 @@ func Solution(X int, Y int, D int) int {
 	count := 0
 	condition := true
 
-	if X == Y {
+	if X == Y || Y == 0 {
 		return 0
 	}
 
