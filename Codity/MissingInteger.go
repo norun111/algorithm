@@ -5,8 +5,39 @@ package Codity
 import (
 	// "fmt"
 	"sort"
+	"math"
 )
 
+// 66%
+
+func isContain(slice []int, str int) bool {
+
+	condition := false
+	for _, s := range slice {
+
+		if s == str {
+			condition = true
+			break //一番初めだけ検索する
+		}
+	}
+
+	return condition //なければfalseを返す
+}
+
+func Solution(A []int) int {
+	// write your code in Go 1.4
+	maxValue := math.MaxInt64
+
+	for i:=1; i<maxValue; i++ {
+		if !isContain(A, i) {
+			return i
+		}
+	}
+	return -1
+
+}
+
+// 55%
 
 func removeDuplicate(args []int) []int {
 	results := make([]int, 0, len(args))
@@ -30,7 +61,6 @@ func Solution(A []int) int {
 		return 1
 	}
 	A = removeDuplicate(A)
-
 
 	condition := false
 
