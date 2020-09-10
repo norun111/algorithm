@@ -28,3 +28,18 @@ func isContain(slice []string, str string) bool {
 
 	return condition //なければfalseを返す
 }
+
+//単語が配列にあるかどうかの判断関数
+func isContain(slice []int, str int) bool {
+
+	condition := false
+	for _, s := range slice {
+
+		if s == str {
+			condition = true
+			break //一番初めだけ検索する
+		}
+	}
+
+	return condition //なければfalseを返す
+}
