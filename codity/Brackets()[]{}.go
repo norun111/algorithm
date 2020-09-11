@@ -19,7 +19,6 @@ func isValidPair(left, right string) bool {
 }
 
 func Solution(S string) int {
-	// write your code in Go 1.4
 	strSlice := strings.Split(S, "")
 
 	stack := make([]string, 0)
@@ -40,11 +39,9 @@ func Solution(S string) int {
 
 		}
 	}
-
 	if len(stack) != 0 {
 		return 0
 	} else {
 		return 1
 	}
-
 }
