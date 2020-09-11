@@ -1,11 +1,12 @@
 package Codity
+
 // 78% runtime
-// you can also use imports, for example:
+
 import (
 	"math"
 	// "fmt"
 )
-// import "os"
+
 func isContain(slice []int, str int) bool {
 
 	condition := false
